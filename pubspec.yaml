@@ -3,6 +3,7 @@ description: The official Flutter plugin for PhotoEditor SDK. Integrate the phot
 version: 3.2.0
 homepage: https://img.ly/products/photo-sdk
 repository: https://github.com/imgly/pesdk-flutter
+publish_to: "none"
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -11,7 +12,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  imgly_sdk: 3.2.0
+  imgly_sdk:
+    git:
+      url: https://github.com/ArmtekFrance/imgly-flutter
+      ref: main
 
 dev_dependencies:
   flutter_test:
